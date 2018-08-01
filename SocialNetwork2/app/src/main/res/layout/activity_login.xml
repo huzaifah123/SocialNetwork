@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/login_icon"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/logo"
+        android:contentDescription="TODO" />
+
+    <EditText
+        android:id="@+id/login_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="149dp"
+        android:background="@drawable/inputs"
+        android:drawableLeft="@drawable/email"
+        android:ems="10"
+        android:hint="Email..."
+        android:inputType="textEmailAddress"
+        android:padding="8dp"
+        android:paddingTop="5dp" />
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="223dp"
+        android:background="@drawable/inputs"
+        android:drawableLeft="@drawable/password"
+        android:ems="10"
+        android:hint="Password..."
+        android:inputType="textPassword"
+        android:padding="8dp" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="221dp"
+        android:background="@drawable/button"
+        android:padding="15dp"
+        android:text="Login"
+        android:textColor="@android:color/background_light"
+        android:textIsSelectable="false"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/register_account_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="186dp"
+        android:text="Don't have an account, new need account?"
+        android:textColor="@android:color/background_dark"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="153dp"
+        android:text="Or Login with"
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="24dp"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/facebook_signin_button"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:src="@drawable/facebook" />
+
+        <ImageView
+            android:id="@+id/twitter_signin_button"
+            android:layout_width="125dp"
+            android:layout_height="105dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:src="@drawable/twitter" />
+
+        <ImageView
+            android:id="@+id/google_signin_button"
+            android:layout_width="90dp"
+            android:layout_height="75dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="11dp"
+            android:layout_weight="1"
+            android:src="@drawable/google" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
